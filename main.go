@@ -27,7 +27,7 @@ func main() {
 	for _, f := range files {
 		log.Println(f.Name())
 		grids = append(grids, &gim.Grid{
-			ImageFilePath: path.Join("images", f.Name()),
+			ImageFilePath: path.Join(imageDir, f.Name()),
 		})
 	}
 
